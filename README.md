@@ -1,7 +1,7 @@
 # Dependency Injection Types:
-- # <ins> _Instantiating beans_ </ins>
+- # <ins> Instantiating beans </ins>
   - ## Instantiation with a Constructor
-    - Most Spring users prefer actual JavaBeans with only a default (no-argument) constructor and appropriate setters and getters modeled after the properties in the container
+   - Most Spring users prefer actual JavaBeans with only a default (no-argument) constructor and appropriate setters and getters modeled after the properties in the container
     ```xml
       <bean id="exampleBean" class="examples.ExampleBean"/>
       <bean name="anotherExample" class="examples.ExampleBeanTwo"/>
@@ -41,9 +41,10 @@
     <bean id="clientService" factory-bean="serviceLocator" factory-method="createClientServiceInstance"/>
    ```
 >   Note:One factory class can also hold more than one factory method
-- # _Dependency Injection_
+- # <ins> Dependency Injection </ins>
   - ## Constructor-based DI
-    - #### With no arguments
+   - #### When no ambiguity exists in argumnets.
+    -If no potential ambiguity exists in the constructor arguments of a bean definition, the order in which the constructor arguments are defined in a bean definition is the order in which those arguments are supplied to the appropriate constructor when the bean is being instantiated. 
       ```java
       package x.y;
 
@@ -67,7 +68,7 @@
             <bean id="beanThree" class="x.y.ThingThree"/>
       </beans>
       ```
-    - #### With arguments
+    - #### When ambiguity exists, type or index has to be specified.
       ```java
       package examples;
 
