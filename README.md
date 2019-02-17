@@ -45,9 +45,8 @@
   - ## Constructor-based DI
    - #### When no ambiguity exists in argumnets.
     -If no potential ambiguity exists in the constructor arguments of a bean definition, the order in which the constructor arguments are defined in a bean definition is the order in which those arguments are supplied to the appropriate constructor when the bean is being instantiated. 
-      ```java
+     ```java
       package x.y;
-
       public class ThingOne {
 
           public ThingOne(ThingTwo thingTwo, ThingThree thingThree) {
