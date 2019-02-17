@@ -140,7 +140,7 @@ public class ExampleBean {
   <bean id="anotherExampleBean" class="examples.AnotherBean"/>
   <bean id="yetAnotherBean" class="examples.YetAnotherBean"/>
 ```
-   3. constructor-arg to static factory method
+   3. ## constructor-arg to static factory method
 ```xml
 <bean id="exampleBean" class="examples.ExampleBean" factory-method="createInstance">
     <constructor-arg ref="anotherExampleBean"/>
