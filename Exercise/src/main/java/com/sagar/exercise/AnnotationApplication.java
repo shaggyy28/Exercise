@@ -1,18 +1,22 @@
-package com.sagar.exercise.Annot;
+package com.sagar.exercise;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
+import com.sagar.exercise.Annot.Person;
+import com.sagar.exercise.Annot.PersonService;
+import com.sagar.exercise.Annot.PersonTableDao;
+
 @ComponentScan
 @Configuration
-public class ApplicationMainTest {
+public class AnnotationApplication {
 
 	public static void main(String[] args) {
 		
 		AnnotationConfigApplicationContext context 
-								= new AnnotationConfigApplicationContext(ApplicationMainTest.class);
+								= new AnnotationConfigApplicationContext(AnnotationApplication.class);
 		getCassandraPersonDaoImpl();
 		String name = context.getBean(PersonService.class).getPrintableName();
 		System.out.println(name);

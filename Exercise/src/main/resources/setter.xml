@@ -12,5 +12,12 @@
 	
 	<bean id="personTableMySqlDaoImpl" class="com.sagar.exercise.xml.PersonTableMySqlDaoImpl"/>
     
+    <bean id="name" class="java.lang.StringBuffer">
+    	<constructor-arg type="java.lang.String" value="sagar"/>
+    </bean>
 
+	<bean id="xmlApplication" class="com.sagar.exercise.XmlApplication">
+	
+	<bean id="name" factory-bean="xmlApplication" factory-method="getName">
+	
 </beans>

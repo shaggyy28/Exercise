@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- services -->
+
+    <!-- <bean id="personService" class="com.sagar.exercise.xml.PersonService">
+    	<constructor-arg ref="personTableMySqlDaoImpl" index="1"/>
+    	<constructor-arg ref="personTableMongoDaoImpl" index="0"/>
+    </bean>
+	 -->
+	 
+	 <!-- <bean id="personService" class="com.sagar.exercise.xml.PersonService">
+	 	<constructor-arg value="12" index="0"/>
+	 	<constructor-arg value="14" index="1"/>
+	 </bean> -->
+	 
+	 <bean id="personService" class="com.sagar.exercise.xml.PersonService">
+	 	<constructor-arg name="last" value="0"/>
+	 	<constructor-arg name="name" value="1"/>
+	 	<property name="personTableMongoDao" value="personTableMongoDaoImpl"/>
+	 	
+	 </bean>
+	 
+	<bean id="personTableMySqlDaoImpl" class="com.sagar.exercise.xml.PersonTableMySqlDaoImpl"/>
+    <bean id="personTableMongoDaoImpl" class="com.sagar.exercise.xml.PersonTableMongoDaoImpl"/>
+<!-- 	<bean id="name" class="java.lang.StringBuffer">
+    	<constructor-arg type="java.lang.String" value="sagar"/>
+    </bean> -->
+    <bean id="xmlApplication" class="com.sagar.exercise.XmlApplication"/>
+    <!-- <bean id="name" factory-bean="xmlApplication" factory-method="getName"/> -->
+    
+</beans>
