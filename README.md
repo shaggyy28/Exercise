@@ -1,4 +1,4 @@
-# Dependency Injection Types:
+Extract from spring-framework guide
 - # Instantiating beans
   
   1. ## Instantiation with a Constructor
