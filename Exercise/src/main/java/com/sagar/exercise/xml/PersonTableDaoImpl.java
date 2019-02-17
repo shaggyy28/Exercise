@@ -1,12 +1,7 @@
-package com.sagar.exercise.Annot;
-
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Primary;
-import org.springframework.stereotype.Repository;
+package com.sagar.exercise.xml;
 
 
-@Repository
-@Primary
+
 class PersonTableMySqlDaoImpl implements PersonTableDao {
 	@Override
 	public Person getPerson() {
@@ -15,8 +10,6 @@ class PersonTableMySqlDaoImpl implements PersonTableDao {
 	}
 }
 
-@Repository
-@Qualifier(value="primary")
 class PersonTableMongoDaoImpl implements PersonTableDao{
 	@Override
 	public Person getPerson() {
