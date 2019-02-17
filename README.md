@@ -89,7 +89,7 @@
     <!-- the bean to be created via the factory bean -->
     <bean id="clientService" factory-bean="serviceLocator" factory-method="createClientServiceInstance"/>
    ```
-   Note:One factory class can also hold more than one factory method
+>   Note:One factory class can also hold more than one factory method
 - ## Setter-Based DI
   ```java
   public class ExampleBean {
