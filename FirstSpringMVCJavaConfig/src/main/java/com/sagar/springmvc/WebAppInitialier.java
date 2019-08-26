@@ -13,19 +13,18 @@ import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatche
 
 import com.sagar.springmvc.controller.HelloController;
 
-
-public class WebAppInitialier extends AbstractAnnotationConfigDispatcherServletInitializer{
+public class WebAppInitialier extends AbstractAnnotationConfigDispatcherServletInitializer {
 
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
 		// TODO Auto-generated method stub
-		return null;
+		return new Class<?>[] { ApplicationConfig.class };
 	}
 
 	@Override
 	protected Class<?>[] getServletConfigClasses() {
 		// TODO Auto-generated method stub
-		return null;
+		return new Class<?>[] { ApplicationConfig.class };
 	}
 
 	@Override
@@ -33,7 +32,5 @@ public class WebAppInitialier extends AbstractAnnotationConfigDispatcherServletI
 		// TODO Auto-generated method stub
 		return null;
 	}
-
-	
 
 }
