@@ -1,5 +1,10 @@
 Manifest-Version: 1.0
+<<<<<<< HEAD
 Built-By: shaggyy28
 Build-Jdk: 1.8.0_222
+=======
+Built-By: sagar
+Build-Jdk: 1.8.0_212
+>>>>>>> bfcfe394230cc29fd69347368ef50649c974053d
 Created-By: Maven Integration for Eclipse
 

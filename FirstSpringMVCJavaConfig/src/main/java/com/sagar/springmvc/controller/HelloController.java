@@ -14,9 +14,9 @@ public class HelloController {
 		return "hello";
 	}
 	
-	@GetMapping(path = {"/home"})
+	@GetMapping(path = {"/h"})
 	public String homeJsp() {
-		return "home";
+		return "index";
 	}
 	
 	
