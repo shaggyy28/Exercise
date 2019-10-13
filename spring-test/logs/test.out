@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-10-12T12:22:10</date>
+  <millis>1570863130145</millis>
+  <sequence>1</sequence>
+  <logger>com.sagar.test</logger>
+  <level>INFO</level>
+  <class>com.sagar.common.AppLogger</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message>sagar Ingale</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-10-12T12:23:08</date>
+  <millis>1570863188212</millis>
+  <sequence>1</sequence>
+  <logger>com.sagar.test</logger>
+  <level>INFO</level>
+  <class>com.sagar.common.AppLogger</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message>sagar Ingale</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-10-12T12:23:09</date>
+  <millis>1570863189442</millis>
+  <sequence>1</sequence>
+  <logger>com.sagar.test</logger>
+  <level>INFO</level>
+  <class>com.sagar.common.AppLogger</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message>sagar Ingale</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-10-12T12:23:10</date>
+  <millis>1570863190892</millis>
+  <sequence>1</sequence>
+  <logger>com.sagar.test</logger>
+  <level>INFO</level>
+  <class>com.sagar.common.AppLogger</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message>sagar Ingale</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-10-12T12:23:15</date>
+  <millis>1570863195373</millis>
+  <sequence>1</sequence>
+  <logger>com.sagar.test</logger>
+  <level>INFO</level>
+  <class>com.sagar.common.AppLogger</class>
+  <method>info</method>
+  <thread>1</thread>
+  <message>sagar Ingale</message>
+</record>
+</log>
